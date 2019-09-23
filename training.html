@@ -130,14 +130,13 @@ table,tr,td{border: solid 1px black;}
             <th scope="col">제목4</th>
             <th scope="col">제목5</th>
         </tr>
-        <thead></thead>
     </thead>
-    <thead> 
+ 
         <tr>
             <th></th>
         </tr>
-    </thead>
-    </table>
+
+
      <tr>
          <td colspan="2">1</td>
          <!-- 가로로 2칸 차지하기-->
@@ -161,5 +160,47 @@ table,tr,td{border: solid 1px black;}
 <span>내용</span>
 <!-- 의미없이 사용하는 경우가 많음-->
 
+
+<!-- form 양식지 -->
+<form>
+    <input type="text" placeholder="아이디를 입력해 주세요" />
+    <input type="password" placeholder="패스워드를 입력해 주세요" />
+    <!-- radio는 name이 중요함-->
+    <input type="radio" name="bt1" value="1" />
+    <input type="radio" name="bt1" value="2" />
+    <input type="radio" name="bt1" value="3" />
+
+
+    <input type="radio" name="bt2" value="1" />
+    <input type="radio" name="bt2" value="2" />
+    <input type="radio" name="bt2" value="3" />
+
+    <input type="checkbox" checked/>
+    <input type="checkbox" />
+    <input type="checkbox" />
+
+        <!-- 선택박스, 콤보박스-->
+        <!-- 선택할 수있는 보기 제시, 직접작성 실수를 방지 -->
+    <select>
+        <option>웹사이트</option>
+        <option>www.naver.com</option>
+        <option>www.google.com</option>
+
+    </select>
+    
+    
+    <!-- 여러줄의 문자열을 받음, cols(가로 글자수), rows(세로줄수) -->
+    <textarea cols="30" rows="5">
+
+
+    </textarea>
+    <input type="button" value="버튼" />
+    <input type="button" value="테스트 버튼" onclick="alert('테스트 버튼이 눌렸습니다.');" />
+
+
+    <!-- 제출버튼 -->
+    <input type="submit" value="제출" />
+</form>
+   <
      </body>
 </html>

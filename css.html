@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>css</title>
+        <style>
+         b{
+            /*요소 선택자*/
+            color: red;
+         }
+         .c_name{
+             /*클래스 선택자*/
+             color: green;
+         }
+         #i_name{
+             /*아이디 선택자*/
+             color: pink;
+         }
+         #i_name2:before{
+              content: "★";
+
+         }
+         #i_name2:after{
+             content: "☆";
+         }
+         #i_name2:first-letter{font-size: 60px;}
+         #i_name2:first-line{ color: violet;}
+
+         .con:first-child{color: blue;}
+         .con:last-child{ color: red;}
+         .con:nth-child(4){color: yellow;}
+
+
+        </style>
+    </head>
+    <body>
+
+  <b>내용1</b>
+  <div class="c_name">클래스</div>
+  <div id="i_name">아이디</div>
+
+
+  <div id="i_name2">가상요소 선택자</div>
+
+
+  <ul>
+      <li class="con">내용1</li>
+      <li class="con">내용2</li>  
+      <li class="con">내용3</li>
+      <li class="con">내용4</li>
+      <li class="con">내용4.1</li>
+      <li class="con">내용5</li>
+  </ul>
+
+
+  <style>
+  /* :link 기본, :visited 방문함, :hover 마우스 ㅇ오림, :active 활성화 됨, :focus: 포커스 됨 */
+  a:link{
+      color: black;
+      text-decoration: none;
+  }
+  a:visited{ color: green;}
+  a:hover{ color: red;}
+  a:active{ color: yellow;}
+  a:focus{ color: pink;}
+  
+  
+  
+  
+  </style>
+
+
+        <a href="#">링크 버튼</a> 
+    </body>
+</html>
