@@ -71,5 +71,205 @@
 
 
         <a href="#">링크 버튼</a> 
+<style>
+    #boxmodel1{
+        background-color: #dddddd;
+        width: 100px;
+        height: 200px;
+        margin: 100px;/*안쪽 여백*/
+        padding: 100px; /*바깥 여백*/
+        border: solid 1px black; /*경계*/
+        /*경계: 선종류 선두께 선색깔*/  
+    }
+</style>
+
+        <div id="boxmodel1">박스모델1</div>
+        인라인 태그
+
+        <style>
+            /*하위 요소 선택자, 띄어쓰기*/
+            div li{
+             color: coral;
+            }
+            /*자식 요소 선택자, > 부등호 ㄱ호*/
+            div>ul>li{
+                text-decoration: underline;
+            }
+            /*선택자 그룹화, 쉼표(,) */
+            div,ul,li{
+                color: blueviolet;
+                /*16진수, 0~9-A~F*/
+                color: #000; /* 3자리 컬러코드 #rgp */
+                color: #000000; /*6자리 컬러코드 #rrggbb*/
+                color: rgb(0,0,255); /* 0~255 */
+                color: rgb(0%,0%,100%)
+
+            }
+            
+        </style>
+        <div style="color: blue">
+        container</div>
+<div>
+        <ul>
+            <li>라스크1</li>
+            <li>라스크2</li>
+            <li>라스크3</li>
+            <li>라스크4</li>
+        </ul>
+        </div>
+        <style>
+            .position_test{
+                background-color: #ddd;
+/* static 정적인(기본)*/
+position: static;
+/* absolute 절대적인 */
+/*top, left, right, bottom 위치 조종 가능*/
+position: absolute;
+top:110px;
+left: 100px;
+/* fixed 고정된 */
+position: fixed;
+}
+        </style>
+        <div class="position_test">
+            position_test
+
+        </div>
+<style>
+    .font_test{
+font-family: "a시나리오", "돋음", dotum, "굴림", gulim, sans-serif;
+/* small, large, medium */
+font-size: 10px;
+/* normal, bold, bolder */
+font-weight: bolder;
+/* normal, italic, oblique */
+font-style: italic;
+/* normal, small-caps, */
+font-variant: small-caps;
+/* left, center, right */
+/* inline 요소에만 적용됨 */
+text-align:center;
+
+height: 350px;
+background-color: #ddd;
+vertical-align: text-top;
+
+text-decoration: underline;
+
+    }
+
+</style>
+        <div class="font_test">
+            AbcDefGHiJklmn
+            container
+            font_test
+            <img width="150px" src="imges/tumblr_okta0rogGf1vc76nvo1_500.jpg" />
+        </div>
+        <style>
+         .letter_line{
+             letteer-spacing: 10px;
+             line-height: 30px;
+             text-indent: 50px
+         }
+
+         .transform{
+             text-transform: uppercase;
+             white-space: pre;
+         }
+
+         .google_font{
+             font-family: 'Black han sans' , sans-serif;
+             font-size: 50px;
+         }
+        </style>
+    
+      
+
+        <div class="letter_line">
+                너는 멍청이
+                Twit twit twit twit
+                I don't like it
+                Nobody likes it
+                가녀린 심청이
+                Twit twit twit twit
+                I don't like it
+                Nobody likes it
+                너는 멍청이
+                나밖에 모르는 사나이
+                가녀린 심청이
+                한 번씩 주위를 둘러봐
+                너는 아파도 모르고 있잖아
+                You make me loyal
+                You make me hero
+                You make me genius
+                주는 게 많아 근데 왜 너만 불행해질까
+                나를 위해서만 숨을 쉬니까
+                너무 외로워 보여
+                너는 멍청이
+                Twit twit twit twit
+                I don't like it
+                Nobody likes it
+                가녀린 심청이
+                Twit twit twit twit
+                I don't like it
+                Nobody likes it
+                Twit twit twit twit
+                우린 길을 잃었어
+                Twit twit twit twit
+                나밖에 모르는 너는 멍청이
+                내가 멍청이
+                너를 병들게 한 싸가지
+                악마의 속삭임
+                욕심이 널 밀어내니까
+                내가 늦더라도 기다리지마
+                I make you patient
+                I make you puppy
+                I make you hungry
+                주는 게 없지 근데 왜 나도 불행해질까
+                나를 위해서만 숨을 쉬지마
+                너무 외로워 보여
+                너는 멍청이
+                Twit twit twit twit
+                I don't like it
+                Nobody likes it
+                가녀린 심청이
+                Twit twit twit twit
+
+        </div>
+<style>
+ .text-transform{
+
+
+    text-transform: lowercase;
+
+ }
+
+</style>
+        <div class="text-transform">AbcDefGHiJklmn</div>
+
+
+        <style>
+             .pre{
+                 white-space: pre;
+             }
+        </style>
+        <!-- &nbsp; 띄어쓰기, <br/> 줄내림 -->
+        <div class="pre">
+            1 2 3      4 5 6 
+            7 8 9 0
+
+        </div>
+        <style>
+             @import url(http://fonts.googlepis.com/earlyaccess/nanumpenscript.css);
+         @import url('http://fonts.googleapis.com/css?family=mansalva&display=swap');
+
+         .google_font{
+             font-family: "nanum pen script" , cursive;
+             font-family: "mansalva" , cursive;
+         }
+        </style>
+
+        <div class="google_font">google_font</div>
+        google_font
     </body>
 </html>
