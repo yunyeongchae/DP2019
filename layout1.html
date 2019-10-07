@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>layout1</title>
+        <meta charset="utf-8">
+        <style>
+            header,nav,div,footer,h1,ul,li,h2,section {
+                /*border: solid 1px black;*/
+                /*경계 : 실선 1픽셀두께 검은색;*/
+                /*margin: 50px;*/
+                /*바깥여백  : 30픽셀;*/
+
+            }
+            header>ul>li{
+                float: left; 
+                list-style: none;
+                padding-left: 10px;
+                padding-right: 10px;
+                border-right: solid 2px gray;
+                
+            }
+            header>ul>li:last-child(5){
+                /* li의5번째을 선택(select)*/
+                border:none;
+            }
+       .header>ul{
+            padding: 0px;
+            margin-left: 200px;
+            margin-right: 200px;
+            margin-top : 13px;
+            margin-bottom: 13px;
+       }
+            .clear {clear:both; height: 0;overflow: hidden;}
+            /*클래스명 clear (지음:양쪽; 높이:0; 넘쳤을 때: 숨김;}*/
+            .float_left{
+                float: left;
+            }
+            .float_right{
+                float: right;
+            }
+            h1{ margin: 0px;}
+            h2{ margin: 7px;}
+            #zoom{
+                margin: 17px;
+
+            }
+            #navigation li{
+                  float: left;
+                  list-style: none;
+                  padding-left: 20px;
+                  padding-right: 20px;
+            }
+            #navigation{}
+        </style>
+    </head>
+    <body>
+        <div id="wrap">
+             <header >
+                <h1 class="float_left">
+                    <a href="#">
+                        <img src="layout1_head_logo.jpg" />
+                    </a>
+                </h1>
+                <ul class="float_left">
+                   <li>ABOUT</li>
+                   <li>SERVICES</li>
+                   <li>WORKS</li>
+                   <li>BLOG</li>
+                   <li>CONTACT US</li>
+                   <div class="clear"></div>
+                </ul>
+                <div id="zoom" class="float_right">
+                    <img src="layout1_head_zoom.jpg" />
+                </div>
+                <div class="clear"></div>
+             </header>
+             <nav id="navigation">
+                 <h2 class="float_left">See Our Works</h2>
+                <ul class="float_right">
+                   <li>Web Design</li>
+                   <li>Icons</li>
+                   <li>Illustlations</li>
+                   <li>Misc</li>
+                   <div class="clear"></div>
+                </ul>
+                <div class="clear"></div>
+                 </nav>
+             <div >
+                 <section>
+                     <h3>web design</h3>
+                     <div>
+                         <img src="layout1_img1.jpg"/>
+                         <dl>
+                             <dt>
+                                 제목제목제목제목제목
+                             </dt>
+                             <dd>
+                                 asdfasfasgsgfnfgdfstbhryndgsdtfbhsrhmnftg내용내용내용내용
+                             </dd>
+                         </dl>
+                     </div>
+                     <div>
+                            <img src="layout1_img2.jpg"/>
+                            <dl>
+                                <dt>
+                                    제목제목제목제목제목
+                                </dt>
+                                <dd>
+                                    asdfasfasgsgfnfgdfstbhryndgsdtfbhsrhmnftg내용내용내용내용
+                                </dd>
+                            </dl>
+                        </div>
+                     <div>right</div>
+                 </section>
+                 <section>
+                        <h3>web design</h3>
+                        <div>
+                            <img src="layout1_img3.jpg"/>
+                            <dl>
+                                <dt>
+                                    제목제목제목제목제목
+                                </dt>
+                                <dd>
+                                    asdfasfasgsgfnfgdfstbhryndgsdtfbhsrhmnftg내용내용내용내용
+                                </dd>
+                            </dl>
+                        </div>
+                        <div>
+                               <img src="layout1_img4.jpg"/>
+                               <dl>
+                                   <dt>
+                                       제목제목제목제목제목
+                                   </dt>
+                                   <dd>
+                                       asdfasfasgsgfnfgdfstbhryndgsdtfbhsrhmnftg내용내용내용내용
+                                   </dd>
+                               </dl>
+                           </div>
+                        <div>right</div>
+                    </section>
+                    <section>
+                            <h3>web design</h3>
+                            <div>
+                                <img src="layout1_img5.jpg"/>
+                                <dl>
+                                    <dt>
+                                        제목제목제목제목제목
+                                    </dt>
+                                    <dd>
+                                        asdfasfasgsgfnfgdfstbhryndgsdtfbhsrhmnftg내용내용내용내용
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div>
+                                   <img src="layout1_img6.jpg"/>
+                                   <dl>
+                                       <dt>
+                                           제목제목제목제목제목
+                                       </dt>
+                                       <dd>
+                                           asdfasfasgsgfnfgdfstbhryndgsdtfbhsrhmnftg내용내용내용내용
+                                       </dd>
+                                   </dl>
+                               </div>
+                            <div>right</div>
+                        </section>
+                        <section>
+                                <h3>web design</h3>
+                                <div>
+                                    <img src="layout1_img7.jpg"/>
+                                    <dl>
+                                        <dt>
+                                            제목제목제목제목제목
+                                        </dt>
+                                        <dd>
+                                            asdfasfasgsgfnfgdfstbhryndgsdtfbhsrhmnftg내용내용내용내용
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div>
+                                       <img src="layout1_img8.jpg"/>
+                                       <dl>
+                                           <dt>
+                                               제목제목제목제목제목
+                                           </dt>
+                                           <dd>
+                                               asdfasfasgsgfnfgdfstbhryndgsdtfbhsrhmnftg내용내용내용내용
+                                           </dd>
+                                       </dl>
+                                   </div>
+                                <div>right</div>
+                            </section>
+            
+             </div>
+             <footer>footer</footer>
+        </div>
+    </body>
+</html>
