@@ -5,6 +5,12 @@
         <title>layout1</title>
         <meta charset="utf-8">
         <style>
+            #wrap{
+                min-width: 1100px; /* 최소 넓이 */
+                max-width: 1920px; /* 최대 넓이 */
+                margin-left: auto;
+                margin-right: auto;
+            }
             header,nav,div,footer,h1,ul,li,h2,section {
                 /*border: solid 1px black;*/
                 /*경계 : 실선 1픽셀두께 검은색;*/
@@ -62,11 +68,74 @@
                 margin-bottom: 25px;
                 font-weight: bold;
             }
+            div>section{
+                padding: 50px;
+            }
+            div>section:nth-child(1){
+                background-color: #98f;
+            }
+            div>section:nth-child(2){
+                background-color: #5d9;
+            }
+            div>section:nth-child(3){
+                background-color: #f76;
+            }
+            div>section:nth-child(4){
+                background-color: #ec5;
+            }
+            div>section h3{
+                color: white;
+                margin-top: 45px;
+                margin-bottom: 45px;
+            }
+            .content_part{
+                width: 480px;
+                float: left; /* 왼쪽 기준으로 둥둥 떠있게 */
+                margin: 10px;
+                /*margin-border-padding-content-padding-border-margin*/
+            
+            }
+            div>section>div{
+                width: 1000px;
+                margin-left: auto;
+                margin-right: auto;
+                /* 블록형 태그의 가운데 정렬법*/
+            }
+            footer ul{
+                padding: 0px;
+            }
+            footer ul>li{
+                list-style: none; /* 리스트-형태: 없음 */
+                float: left;
+            }
+            /*footer>ul:nth-child(1)>li{
+                margin-left:  10px;
+                margin-right: 10px;
+            }*/
+            #footer_div{ float: left; }
+            #footer2{ float: right; }
+            #footer1>li{
+                padding-left:  10px;
+                padding-right: 10px;
+                border-right: solid 1px #aaa;
+            }
+            #footer1>li:nth-child(6){
+                border: none;
+            }
+            #footer2>li{
+                margin-left:  5px;
+                margin-right: 5px;
+            }
+            footer{
+                background-color: #333;
+                color: #ddd;
+            }
         </style>
     </head>
+
     <body>
         <div id="wrap">
-             <header >
+             <header>
                 <h1 class="float_left">
                     <a href="#">
                         <img src="layout1_head_logo.jpg" />
@@ -85,6 +154,7 @@
                 </div>
                 <div class="clear"></div>
              </header>
+
              <nav id="navigation">
                  <h2 class="float_left">See Our Works</h2>
                 <ul class="float_right">
@@ -96,10 +166,12 @@
                 </ul>
                 <div class="clear"></div>
                  </nav>
-             <div >
+
+             <div>
                  <section>
-                     <h3>web design</h3>
                      <div>
+                     <h3>web design</h3>
+                     <div class="content_part">
                          <img src="layout1_img1.jpg"/>
                          <dl>
                              <dt>
@@ -110,7 +182,7 @@
                              </dd>
                          </dl>
                      </div>
-                     <div>
+                     <div class="content_part">
                             <img src="layout1_img2.jpg"/>
                             <dl>
                                 <dt>
@@ -121,11 +193,13 @@
                                 </dd>
                             </dl>
                         </div>
-                     <div>right</div>
+                        <div class="clear"></div>
                  </section>
+
                  <section>
+                    <div>
                         <h3>web design</h3>
-                        <div>
+                        <div class="content_part">
                             <img src="layout1_img3.jpg"/>
                             <dl>
                                 <dt>
@@ -136,7 +210,7 @@
                                 </dd>
                             </dl>
                         </div>
-                        <div>
+                        <div class="content_part">
                                <img src="layout1_img4.jpg"/>
                                <dl>
                                    <dt>
@@ -147,11 +221,14 @@
                                    </dd>
                                </dl>
                            </div>
-                        <div>right</div>
+                           <div class="clear"></div>
                     </section>
+                    
+
                     <section>
-                            <h3>web design</h3>
                             <div>
+                            <h3>web design</h3>
+                            <div class="content_part">
                                 <img src="layout1_img5.jpg"/>
                                 <dl>
                                     <dt>
@@ -162,7 +239,7 @@
                                     </dd>
                                 </dl>
                             </div>
-                            <div>
+                            <div class="content_part">
                                    <img src="layout1_img6.jpg"/>
                                    <dl>
                                        <dt>
@@ -173,11 +250,13 @@
                                        </dd>
                                    </dl>
                                </div>
-                            <div>right</div>
+                            <div class="clear"></div>
                         </section>
+
                         <section>
-                                <h3>web design</h3>
                                 <div>
+                                <h3>web design</h3>
+                                <div class="content_part">
                                     <img src="layout1_img7.jpg"/>
                                     <dl>
                                         <dt>
@@ -188,7 +267,7 @@
                                         </dd>
                                     </dl>
                                 </div>
-                                <div>
+                                <div class="content_part">
                                        <img src="layout1_img8.jpg"/>
                                        <dl>
                                            <dt>
@@ -199,11 +278,36 @@
                                            </dd>
                                        </dl>
                                    </div>
-                                <div>right</div>
+                                   <div class="clear"></div>
                             </section>
             
              </div>
-             <footer>footer</footer>
+             <footer>
+                 <div id="footer_div">
+                 <ul id="footer1">
+                   <li>Home</li>
+                   <li>About</li>
+                   <li>Services</li>
+                   <li>Work</li>
+                   <li>Blog</li>
+                   <li>Contact us</li>
+                   <div class="clear"></div>
+                 </ul>
+
+                 <p>ⓒ 2013 BlueBox. All Right Reserved.</p>
+                 <p>the loges in the design are the property of their respective owners/copyright holders.</p>
+                </div>
+                 <ul id="footer2">
+                     <li><img src="layout1_footer_icon1.png"/></li>
+                     <li><img src="layout1_footer_icon2.png"/></li>
+                     <li><img src="layout1_footer_icon3.png"/></li>
+                     <li><img src="layout1_footer_icon4.png"/></li>
+                     <li><img src="layout1_footer_icon5.png"/></li>
+                     <li><img src="layout1_footer_icon6.png"/></li>
+                     <div class="clear"></div>
+                 </ul>
+                 <div class="clear"></div>
+             </footer>
         </div>
     </body>
 </html>
