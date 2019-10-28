@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>layout 2</title>
+        <meta charset="utf-8">
+    <style>
+       header{
+           background-color: #02918c;
+           color: white; /*글씨 색깔은 상속 됩니다.*/
+       }
+       header>h1>span:nth-child(2){
+           color: #cfc91d;
+       }
+       header li{
+           float:left;
+           list-style: none;
+           padding: 0px 10px; /*안쪽 여백: 상하 좌우*/
+       }
+       .clear{
+           clear:both; height: 0px; overflow: hidden;
+       }
+       header>h1{
+             float: left;
+             margin: 0px;
+       }
+       header>nav{
+           float: right;
+       }
+       header ul{
+           margin: 10px 0px;
+       }
+       #main_visual{
+           background-image: url("layout2_visual.jpg");
+           height: 400px;
+           /*background-size:auto 100% ; */ /*가로 세로*/
+           background-size: cover; /* 커버 */
+           background-repeat: no-repeat;
+           /* repeat, no-repeat, repeat-x, repeat-y */
+           background-color: black;
+           background-position: 50% 50%; /*0퍼센트 최소, 100퍼센트 최대*/
+
+           color: white;
+           text-align: center;
+           padding: 100px 0px;
+       }
+       #main_visual>h2{
+           width: 900px;
+          
+           margin: 10px auto; /* 상하 좌우*/
+           letter-spacing: 20px; /* 글자 사이 간격*/ 
+           font-size: 40px;
+       }
+       #title_top{
+           font-size: 25px;
+           
+       }
+       #title_bottom{
+           font-size: 15px;
+       }
+       #main_visual>img{
+           margin-top: 130px;
+       }
+       section{
+           text-align: center;
+       }
+       section>h3{
+           color: #02918c;
+           font-weight: normal;
+           font-size: 30px;
+
+       }
+       section>p{
+           width: 650px;
+           margin: 0px auto; /*상하 좌우*/
+       }
+       section>ul>li{
+           float:left;
+           width: 25%; /* 1/4 4개로 나눔 */
+           list-style: none;
+       }
+    </style>
+    </head>
+    <body>
+        <div id="wrap"></div>
+            <header>
+                <h1>
+                    <spam>MY</spam><span>POLIO</span>
+                    
+                </h1>
+                <nav>
+                    <ul>
+                        <li>Home</li>
+                        <li>About me</li>
+                        <li>Services</li>
+                        <li>My work</li>
+                        <li>Contact me</li>
+                        <div class="clear"></div>
+                    </ul>
+                </nav>
+                <div class="clear"></div>
+            </header>
+            <div id="main_visual">
+             <div id="title_top">Lorem ipsum dolor sit iusmod tempor</div>
+             <h2>INCIDIDUNT BORE</h2>
+              <diV id="title_bottom">Orem ipsum dolor sit amet, consectetur </diV>
+            <img src="imges/layout2_button.jpg"></div>
+            </div>
+            <section>
+            <h3>ABOUT ME</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+commodo consequat duis aute irure dolor.
+            </p>
+            <ul>
+                <li>
+                    <img src="imges/layout2_icon1.jpg" />
+                    <dl>
+                        <dt>Title goes here</dt>
+                        <dd>
+                            onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolorerserss eerhfre mag.
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <img src="imges/layout2_icon2.jpg" />
+                    <dl>
+                        <dt>Title goes here</dt>
+                        <dd>
+                            onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolorerserss eerhfre mag.
+                        </dd>
+                    </dl>
+                </li>
+
+                <li>
+                    <img src="imges/layout2_icon3.jpg" />
+                    <dl>
+                        <dt>Title goes here</dt>
+                        <dd>
+                            onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolorerserss eerhfre mag.
+                        </dd>
+                    </dl>
+                </li>
+                    
+
+                <li>
+                    <img src="imges/layout2_icon4.jpg" />
+                    <dl>
+                        <dt>Title goes here</dt>
+                        <dd>
+                            onsectetur adipisicing elit, sedo eiusmod tempor incidi et dolorerserss eerhfre mag.
+                        </dd>
+                    </dl>
+                </li>
+                <div class="clear"></div>
+            </ul>
+        </section>
+            <section>content2</section>
+        </div>
+    </body>
+</html>
