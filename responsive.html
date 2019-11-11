@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+            <a href="index.html">뒤로가기</a>
+        <title>responsive web</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <style>
+         .col-1 {width: 8.33%;}
+         .col-2 {width: 16.66%;}
+         .col-3 {width: 25%;}
+         .col-4 {width: 33.33%;}
+         .col-6 {width: 50%;}
+         .col-12 {width: 100%;}
+         [class*="col-"] {
+             float: left;}
+             /*클래스 명예 */
+         
+         /*
+				모바일 320px ~ 767px
+				타블렛 768px ~ 1023px or 1199px
+				PC 1200px 이상 or 1024px 이상
+			*/
+			body{background-color: green;}
+			@media screen and (max-width: 1920px) {
+  				body{background-color: blue;}
+			}
+			@media screen and (max-width: 1023px){
+				body{background-color: red;}
+			}
+			@media screen and (max-width: 767px){
+				body{background-color: yellow;}
+			}
+         body div:nth-child(1){ background-color: #333; }
+         body div:nth-child(2){ background-color: #333; }
+         body div:nth-child(3){ background-color: #333; }
+         body div:nth-child(4){ background-color: #333; }
+         body div:nth-child(5){ background-color: #333; }
+         body div:nth-child(6){ background-color: #333; }
+        </style>
+    </head>
+    <body>
+        <div class="con-1">con-1</div>
+        <div class="con-2">con-1</div>
+        <div class="con-3">con-1</div>
+        <div class="con-4">con-1</div>
+        <div class="con-6">con-1</div>
+        <div class="con-12">con-1</div>
+      
+    </body>
+</html>
