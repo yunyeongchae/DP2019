@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <a href="index.html">뒤로가기</a>
+        <title>CLIO</title>
+        <meta charset="utf-8">
+    <style>
+        body{
+            margin: 0px;
+        }
+       header{
+           background-color: black;
+           color: white; /*글씨 색깔은 상속 됩니다.*/
+           padding: 5px 230px; /*상하좌우 */
+       }
+
+       nav{
+           background: #f5ede0;
+       }
+       header>h1>span:nth-child(1){
+        padding: 0px 770px;
+        font-size: 40px;
+       }
+       header li{
+           float:left;
+           list-style: none;
+           padding: 0px 10px; /*안쪽 여백: 상하 좌우*/
+       }
+       .clear{
+           clear:both; height: 0px; overflow: hidden;
+       }
+       header{
+             float: left;
+             margin: 0px;
+       }
+       header>nav{
+           float: right;
+       }
+       header ul{
+           margin: -90px 250px;
+           font-size: 11px;
+       }
+       #main_visual{
+           background-image: url("imges/클리오.jpg");
+           height: 250px;
+           /*background-size:auto 100% ; */ /*가로 세로*/
+           background-size: cover; /* 커버 */
+           background-repeat: no-repeat;
+           /* repeat, no-repeat, repeat-x, repeat-y */
+           background-color: black;
+           background-position: 50% 50%; /*0퍼센트 최소, 100퍼센트 최대*/
+
+           color: white;
+           text-align: center;
+           padding: 100px 0px;
+       }
+       
+       #main_visual>h2{
+           width: 900px;
+          
+           margin: 10px auto; /* 상하 좌우*/
+           letter-spacing: 20px; /* 글자 사이 간격*/ 
+           font-size: 40px;
+       }
+       #title_top{
+           font-size: 25px;
+           
+       }
+       #title_bottom{
+           font-size: 15px;
+       }
+    
+       section{
+           text-align: center;
+       }
+     
+       section>p{
+           width: 650px;
+           margin: 30px auto; /*상하 좌우*/
+       }
+
+       section>#about_list>li{
+           float:left;
+           width: 25%; /* 1/4 4개로 나눔 */
+           width:calc(25% - (1px / 4 * 3) - 50px - 50px); 
+           /*넓이를 계산 cala*/
+           /*4칸 3줄*/
+           list-style: none;
+           border-right: solid 1px #ccc;
+           padding: 50px;
+       }
+      
+       section>#adipisicing>li{
+           float:left;
+           width: 33.3%; 
+           width:calc(33.3% - (1px / 3 * 2) - 50px - 50px); 
+           /*넓이를 계산 cala*/
+           /*4칸 3줄*/
+           list-style: none;
+           border-right: solid 1px #ccc;
+           padding: 50px;
+       }
+       section>#about_list>li:nth-child(4){
+           border: none; /*마지막 선 삭제*/
+       }
+       section>#about_list{
+           padding: 0px;
+           margin-left: 100px;
+           margin-right: 100px;
+       }
+       section dd{
+           margin: 0px;
+       }
+       section>#work_list>li{
+           float: left;
+          list-style: none;
+          width: 25%;
+       }
+       section>#work_list>li>img{
+          display: inline; /* img태그의 기본모습 - 인라인형 */
+          display: block; /* 블록형 모습으로 변경 */
+           width: 100%;
+       }
+       section>ul>li>img{
+           width: 250px;
+       }
+       section>#work_list{
+           padding:  0px;
+       }
+       #wrap{
+           min-width: 1000px;
+           max-width: 1920px; /* fullHD */
+           margin-left: auto;
+           margin-right: auto;
+       }
+       #navigation{
+                padding: 10px 50px;
+            }
+            footer{
+                padding: 10px 50px;
+            }
+       nav>ul>li{
+                float: left; 
+                list-style: none;
+                padding-left: 80px;
+                padding-right: 15px;
+               
+                
+                
+            }
+      section>#adipisicing>li>dl>dt{
+          font-size: 30px;
+         
+      }
+      section>#abc{
+          background: black;
+          color: white;
+          padding-left: 10px;
+          
+      }
+      section>#ado>li{
+        background-color: black;
+           color: white; /*글씨 색깔은 상속 됩니다.*/
+           
+           padding: 5px 50px; /*상하좌우 */
+           font-size: 15px;
+      }
+
+    </style>
+    </head>
+    <body>
+        <div id="wrap"></div>
+            <header>
+                <h1>
+                    <span>CLIO</span>
+                    
+                </h1>
+                <nav>
+                    <ul>
+                        <li>로그인</li>
+                        <li>회원가입</li>
+                        <li>매장안내</li>
+                        <li>인재채용</li>
+                        
+                        <div class="clear"></div>
+                    </ul>
+                </nav>
+                <div class="clear"></div>
+            </header>
+           
+            <nav id="navigation">
+                      
+                                <h2 class="float_left"></h2>
+
+                             <ul>
+                                    <li>ABOUIT CLIO</li>
+                                    <li>PRODUCT</li>
+                                    <li>MEDIA</li>
+                                    <li>PRO-TIP</li>
+                                    <li>COMMUNITY</li>
+                                    <li>EVENT</li>
+                                    <li>IR</li>
+                                    <div class="clear"></div>
+                                </ul>
+                            
+                            <div class="clear"></div>
+                        </nav>
+
+            <div id="main_visual">
+             <div id="title_top"></div>
+            
+              
+            </div>
+           
+        
+        <section>
+                <h3>NEW ARRIVAL</h3>
+            
+              
+                <ul id="about_list">
+                    <li>
+                        <img src="imges/HLGBU99A48X8458UKKH9.jpg" />
+                        <dl>
+                            <dt>멜팅 매트 립</dt>
+                            
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="imges/N4N2OQ6GZQBPEDOGTER2.jpg" />
+                        <dl>
+                            <dt>매드 매트 립</dt>
+                            
+                        </dl>
+                    </li>
+    
+                    <li>
+                        <img src="imges/B8C6WXXOTE9Y9AJFFLH0.jpg" />
+                        <dl>
+                            <dt>매드 벨벳 립</dt>
+                            
+                        </dl>
+                    </li>
+                        
+    
+                    <li>
+                        <img src="imges/QJIGBTVBR2GZS1LR7TSL.jpg" />
+                        <dl>
+                            <dt>프로 블러셔 팔레트</dt>
+                            
+                        </dl>
+                    </li>
+                    <div class="clear"></div>
+                </ul>
+            </section>
+            <section>
+                    <h3>NEW ARRIVAL</h3>
+                
+                  
+                    <ul id="adipisicing">
+                        <li>
+                            <img src="imges/클리오1.jpg" />
+                            <dl>
+                                <dt>매드 매트 립</dt>
+                                <P>
+                                    클리오 매드매트립/매드벨벳틴트 19FW 신규컬러 발색
+                                </P>
+                            </dl>
+                        </li>
+                        <li>
+                            <img src="imges/클리오2.jpg" />
+                            <dl>
+                                <dt>매드 매트 립</dt>
+                                <p>
+                                    클리오 가을 시즌 매드 매트 립, 매드 벨벳 틴트 신상 출시!
+                                </p>
+                            </dl>
+                        </li>
+        
+                        <li>
+                            <img src="imges/클리오3.jpg" />
+                            <dl>
+                                <dt>프로 아이 팔레트</dt>
+                                <p>
+                                    프로 아이 팔레트 스트릿브릭 활용 아이메이크업 방법!
+                                </p>
+                            </dl>
+                        </li>
+
+                        <div class="clear"></div>
+                    </ul>
+                </section>
+            <a href="https://www.youtube.com/watch?v=8uPPdteqcW0&feature=emb_logo">
+                <img src="imges/클리오 영상.jpg">
+            </a>
+            <section>
+                    
+                      
+                            
+                         <ul id="ado">
+                                <li>ABOUIT CLIO</li>
+                               
+                                <li>PRODUCT</li>
+                                <li>MEDIA</li>
+                                <li>PRO-TIP</li>
+                                <li>COMMUNITY</li>
+                                <li>EVENT</li>
+                                <li>IR</li>
+                                <li>로그인</li>
+                                <div class="clear"></div>
+                            </ul>
+                        
+                        <div class="clear"></div>
+                   
+                </section>
+                
+           
+        </div>
+    </body>
+</html>
